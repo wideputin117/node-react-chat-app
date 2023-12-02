@@ -9,7 +9,7 @@ app.use(cors({ origin: true })); // lets resource sharing from all origins
 app.post("/authenticate", async (req, res) => {
   const { username } = req.body;
   // using axios to fetch data
-  // prjct id = 6b9e2dce-f923-4180-8d43-c78e632b490a  private key= 09389750-3490-43e3-95af-34faeb1cae3a
+ 
   try {
     const r= await axios.put('https://api.chatengine.io/users/',{
       username: username,
